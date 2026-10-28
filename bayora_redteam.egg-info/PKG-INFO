@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: bayora-redteam
+Version: 0.1.0
+Summary: BAYORA controlled synthetic AI red-team prototype
+Requires-Python: >=3.11
+Requires-Dist: pydantic<3,>=2.8
+Provides-Extra: api
+Requires-Dist: fastapi<1,>=0.115; extra == "api"
+Requires-Dist: uvicorn<1,>=0.30; extra == "api"
+Provides-Extra: dev
+Requires-Dist: fastapi<1,>=0.115; extra == "dev"
+Requires-Dist: uvicorn<1,>=0.30; extra == "dev"
+Requires-Dist: httpx<1,>=0.27; extra == "dev"
+Requires-Dist: pytest<10,>=8; extra == "dev"

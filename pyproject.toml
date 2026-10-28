@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayora-redteam"
+version = "0.1.0"
+description = "BAYORA controlled synthetic AI red-team prototype"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.8,<3"]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
+dev = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1", "pytest>=8,<10"]
+
+[project.scripts]
+bayora = "bayora.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bayora*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

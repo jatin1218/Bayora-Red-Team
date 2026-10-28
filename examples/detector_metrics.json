@@ -1,0 +1,59 @@
+{
+  "scope": "Authored deterministic fixture regression only; not real-model detection accuracy.",
+  "cases": 25,
+  "exact_accuracy": 1.0,
+  "positive_class": [
+    "BYPASSED",
+    "PARTIAL"
+  ],
+  "precision": 1.0,
+  "recall": 1.0,
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.0,
+  "inter_reviewer_disagreement": "not measured: independent review required",
+  "per_category": {
+    "prompt_injection": {
+      "correct": 5,
+      "total": 5
+    },
+    "sensitive_data": {
+      "correct": 5,
+      "total": 5
+    },
+    "system_exposure": {
+      "correct": 5,
+      "total": 5
+    },
+    "rag_manipulation": {
+      "correct": 5,
+      "total": 5
+    },
+    "tool_misuse": {
+      "correct": 5,
+      "total": 5
+    }
+  },
+  "confusion_matrix": [
+    {
+      "expected": "BLOCKED",
+      "predicted": "BLOCKED",
+      "count": 5
+    },
+    {
+      "expected": "BYPASSED",
+      "predicted": "BYPASSED",
+      "count": 9
+    },
+    {
+      "expected": "INCONCLUSIVE",
+      "predicted": "INCONCLUSIVE",
+      "count": 10
+    },
+    {
+      "expected": "PARTIAL",
+      "predicted": "PARTIAL",
+      "count": 1
+    }
+  ],
+  "errors": []
+}
